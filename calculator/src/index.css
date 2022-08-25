@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,400;1,500&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.calculator {
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(6rem, auto) repeat(5, 4rem);
+  /* gap: 1px; */
+  width: calc(24rem + 4px);
+  margin: 0 auto;
+}
+
+.button-ac {
+  grid-column: span 4;
+  background-color: #f19408f1;
+  color: #f8f9fa;
+  border: 1px solid black;
+  font-size: 22px;
+}
+.last-output {
+  background-color: black;
+}
+.digi {
+  background-color: #f19408f1;
+  color: #f8f9fa;
+  border: 1px solid black;
+}
+.button-equal {
+  width: 100% !important;
+  /* background-color: #f1a008; */
+}
+
+.last-output {
+  font-weight: 500;
+}
+
+.current-output {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+button {
+  background-color: rgba(247, 242, 242, 0.808);
+  border: 1px solid;
+  font-size: 22px;
+}
+
+.output {
+  background-color: #070707;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / span 4;
+  align-items: flex-end;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+pre {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+
+
+@media screen and (min-width: 290px) {
+  .body{
+    width: 100px !important;
+    height: auto;
+  }
+}
